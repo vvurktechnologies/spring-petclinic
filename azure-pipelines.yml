@@ -16,6 +16,7 @@ steps:
     SonarQube: 'Sonar_Qube_Server'
     scannerMode: 'other'
 
+
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
