@@ -16,11 +16,10 @@ steps:
     SonarQube: 'Sonar_Qube_Server'
     scannerMode: 'other'
 
-
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package sonar:sonar'
+    goals: 'clean package'
 
